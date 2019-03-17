@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+}
+#chat{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas: 
+    "f c"
+    "f i" 
+}
+
+#friends{
+    display: grid;
+    grid-area: f;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: #886176;
+    border-radius: 5px;
+
+}
+
+#chatBox{
+    display: grid;
+    grid-area: c;
+    border-radius: 5px;
+
+}
+
+#inputLine{
+    display: grid;
+    grid-area: i;
+    border-radius: 5px;
+
+}
+
+#send{
+    background-color: #886176;
+    border-radius: 5px;
+    display: grid;
+
+}
+
+.messege{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    min-width: 17vw;
+    height: 8vh;
+    /* min-height: 50vh; */
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.messege.left{
+    background-color: #C6CAED;
+    justify-self: right;
+}
+
+.messege.right{
+    background-color: #7CAE7A;
+    justify-self: left;
+}
+
+.text{
+    display: grid;
+    justify-self: center;
+    align-self: start;
+    min-height: 5vh;
+}
+
+.time{
+    display: grid;
+    justify-self: right;
+    align-self: end;
+    max-height: 2vh;
+}
+
+#inputLine{
+    display: grid;
+    grid-template-columns: 14fr 1fr;
+    border-radius: 5px;
+
+}
+
+#send p{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+}
+
+
