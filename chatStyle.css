@@ -64,7 +64,7 @@ body{
 
 .text{
     display: grid;
-    justify-self: center;
+    justify-self: left;
     align-self: start;
     min-height: 5vh;
 }
@@ -89,4 +89,10 @@ body{
     justify-self: center;
 }
 
+#friends div{
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    max-height: 10vh;
+    font-size: 3vh;
+}
 

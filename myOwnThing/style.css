@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+}
+
+#container{
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-areas: 
+    "l l l"
+    "m m m"
+    "f f f"
+}
+
+#mainBarAndLogo{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    grid-area: l;
+}
+
+#logo{
+    min-width: 14vw;
+    border-right: 1px solid gray;
+    height: 9vh;
+}
+
+#navBar{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#sideBar{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    border-right: 1px solid gray;
+}
+
+
+
+#mainBody{
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-area: m;
+}
+
+#main{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    grid-template-rows: repeat(3, 1fr);
+    min-height: 70vh;
+}
+
+#news{
+    display: grid;
+    grid-auto-rows: 4fr 2fr;
+    border-left: 1px solid gray;
+}
+
+#footer{
+    border-top: 1px solid gray;
+    display: grid;
+    text-align: center;
+    min-width: 100vw;
+    grid-area: f;
+}
